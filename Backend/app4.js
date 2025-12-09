@@ -1,11 +1,13 @@
 let express = require('express');
 let bodyparser = require('body-parser');
 let cors =require("cors")
+let path = require('path');
 
 let app = express();
 app.use(cors())
 app.use(bodyparser.urlencoded({extended:false}))
 app.use(bodyparser.json())
+app.use(express.static(path.join(__dirname, '../public')))
 
 app.get("/",(req,res)=>{
     res.send("Home Page")

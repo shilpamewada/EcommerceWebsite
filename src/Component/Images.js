@@ -27,7 +27,7 @@ function Images({ addToCart }) {
         products.map((item) => (
           <div  className="card">
             <div>
-              <img src={item.image} alt={item.name} />
+              <img src={`http://localhost:3004/${item.image}`} alt={item.name} />
               <Button
                 style={{ marginTop: '10px', backgroundColor: "white" }}
                 className="nav-Link btn btn-outline-dark me-2"
