@@ -30,6 +30,7 @@ function App() {
           <Navbar />
         </div>
         <Routes>
+          <Route path='/' element={<Home addToCart={addToCart} />} />
           <Route path='/Home' element={<Home addToCart={addToCart} />} />
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
