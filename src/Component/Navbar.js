@@ -1,16 +1,11 @@
-import React, { useState } from 'react';
+
 import { Link } from 'react-router-dom';
 import logo from './myntra.jpg';
 import { useNavigate } from 'react-router-dom';
 import { Button, Dropdown } from 'react-bootstrap'; // Import Dropdown component
 
 function Navbar() {
-  const [cartItems, setCartItems] = useState([]);
   const navigate = useNavigate();
-
-  const addToCart = (item) => {
-    setCartItems([...cartItems, item]);
-  };
 
   const handleLogout = () => {
     alert("Logged out successfully");

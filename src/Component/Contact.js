@@ -2,7 +2,7 @@
 import React,{useState} from 'react'
 import './Contact.css'
 import { Link } from 'react-router-dom'
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody} from 'reactstrap';
 
 function Contact(args) {
     const [modal, setModal] = useState(false);
